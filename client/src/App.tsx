@@ -1,8 +1,11 @@
-
-export default function App() {
+import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
+import Home from './pages/home'
+export default function App () {
   return(
-    <div>
-      <h1>ProjectFlow</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+    </Router>
   )
 }
